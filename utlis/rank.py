@@ -37,7 +37,7 @@ def remrank(redis,rank,userID,chatID,type):
 	except Exception as e:
 		return 0
 def isrank(redis,userID,chatID):
-	ad = [152221858]
+	ad = [5030591086]
 	get = redis.get("{}Nbot:BOTrank".format(BOT_ID))
 	if get and int(get) == userID:
 		return "bot"
